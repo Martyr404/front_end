@@ -7,9 +7,8 @@ export default function Header() {
       <div className="container py-6 sm:px-6">
         <div className="flex items-center justify-between gap-5">
           <Link className="flex items-center gap-2" href="/">
-            <Image className="border-2 border-sky-200 min-w-10 rounded-full" src="/logo.jpg" alt="logo" width={40} height={40} />
             <span className="hidden lg:block text-lg pl-2 font-semibold">
-              IIC Studio
+              placed items
             </span>
           </Link>
           <nav className="">
