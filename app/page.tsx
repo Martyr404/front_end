@@ -1,6 +1,4 @@
 
-import Header from "@components/header";
-import  Body  from "@components/body";
 import { BackButton } from "@components/back-button";
 
 export default function Home() {
@@ -9,8 +7,6 @@ export default function Home() {
       scrollbarWidth: "none", // Firefox
       msOverflowStyle: "none", // IE/Edge
     }}>
-      <Header/>
-      <Body/>
     </div>
   );
 }
