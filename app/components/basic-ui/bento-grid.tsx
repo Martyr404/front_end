@@ -1,7 +1,6 @@
 import { ArrowIcon } from "@icons/arrow-icon";
 import { ComponentPropsWithoutRef, ReactNode } from "react";
 
-import { RippleButton } from "@components/basic-ui/normal-button"
 import { cn } from "@lib/utils";
 
 interface BentoGridProps extends ComponentPropsWithoutRef<"div"> {
