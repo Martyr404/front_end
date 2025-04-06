@@ -49,7 +49,7 @@ export default function Home() {
     },
   ];
   return (
-    <div className="font-[family-name:var(--font-geist-sans)] overflow-y-hidden">
+    <div className="font-[family-name:var(--font-geist-sans)]">
        <BentoGrid className="lg:grid-rows-3">
       {features.map((feature) => (
         <BentoCard key={feature.name} {...feature} />
