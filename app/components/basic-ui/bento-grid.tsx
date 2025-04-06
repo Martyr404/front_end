@@ -2,7 +2,7 @@ import { ArrowIcon } from "@icons/arrow-icon";
 import { ComponentPropsWithoutRef, ReactNode } from "react";
 
 import { cn } from "@lib/utils";
-
+//成就展示用
 interface BentoGridProps extends ComponentPropsWithoutRef<"div"> {
   children: ReactNode;
   className?: string;
