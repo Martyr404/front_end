@@ -1,10 +1,8 @@
 'use client'
 import { ArrowIcon } from "@components/icons/arrow-icon"
 import { cn } from "@lib/utils"
-import { radialGradient } from "framer-motion/client"
-import React from "react"
 import { RingProgress } from "@components/icons/ring-progress"
-import { useEffect,useState } from "react"
+import React,{ useEffect,useState } from "react"
 
 interface ReturnTopButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {}
 
@@ -17,6 +15,7 @@ export const ReturnTopButton = React.forwardRef<HTMLButtonElement, ReturnTopButt
         behavior: "smooth"
       });
     };
+
     //进度条监听函数
     const [angle,setAngle]=useState(0);
       useEffect(
@@ -33,7 +32,7 @@ export const ReturnTopButton = React.forwardRef<HTMLButtonElement, ReturnTopButt
         }
       }
     )
-
+    //渲染
     return (
       <button
       ref={ref}
@@ -41,9 +40,9 @@ export const ReturnTopButton = React.forwardRef<HTMLButtonElement, ReturnTopButt
       className={cn("group fixed cursor-pointer bottom-10 right-10", className)}
       {...props}
     >
-      <div className="relative w-12 h-12">
-        <RingProgress angle={1.076*angle} color="#0ea5e9"/>
-        <ArrowIcon className="rotate-90" />
+      <div className="relative">
+        <RingProgress angle={1.1*angle} color="#0ea5e9"/>
+        <ArrowIcon className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-90" />
       </div>
     </button>
     );

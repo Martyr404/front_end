@@ -10,8 +10,8 @@ interface RingProgressProps {
 
 export const RingProgress: React.FC<RingProgressProps> = ({
   angle,
-  radius = 40,
-  strokeWidth = 6,
+  radius = 24,
+  strokeWidth = 5,
   color = "red",
   trackColor = "#e5e7eb", // Tailwind gray-200
 }) => {
