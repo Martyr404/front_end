@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { ArrowIcon } from "@components/icons/arrow-icon"
 import { cn } from "@lib/utils"
 import { RingProgress } from "@components/icons/ring-progress"
@@ -32,7 +32,7 @@ export const ReturnTopButton = React.forwardRef<HTMLButtonElement, ReturnTopButt
           window.removeEventListener("scroll",handleScroll)
         }
       }
-    )
+    );
     //渲染
     return (
       <AnimatePresence>
