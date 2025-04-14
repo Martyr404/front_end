@@ -1,6 +1,12 @@
 import Link from "next/link";
-import Image from "next/image";
-
+const navItems = [
+  { href: "/Introduction", label: "Introduction" },
+  { href: "/Member", label: "Member" },
+  { href: "/News", label: "News" },
+  { href: "/Activity", label: "Activity" },
+  { href: "/Communication", label: "Communication" },
+  { href: "/Book", label: "Book" },
+];
 export default function Header() {
   return (
     <header className="fixed z-20 h-24 inset-0 bg-white/80 flex items-center backdrop-blur-lg">
@@ -11,31 +17,21 @@ export default function Header() {
               placed items
             </span>
           </Link>
-          <nav className="">
+          <nav>
             <ul
               role="list"
               className="flex items-center gap-4 md:gap-10 leading-5 text-md md:text-lg tracking-tight font-normal"
             >
-              <li>
-                <Link href="/Home" className="relative inline-block after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-sky-500 after:transition-all after:duration-300 hover:after:w-full">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" className="relative inline-block after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-sky-500 after:transition-all after:duration-300 hover:after:w-full">
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link href="/member" className="relative inline-block after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-sky-500 after:transition-all after:duration-300 hover:after:w-full">
-                  Member
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="relative inline-block after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-sky-500 after:transition-all after:duration-300 hover:after:w-full">
-                  Contact
-                </Link>
-              </li>
+                {navItems.map((item) => (
+                  <li key={item.href}>
+                    <Link
+                      href={item.href}
+                      className="relative inline-block after:absolute after:left-0 after:-bottom-0.5 after:w-0 after:h-[2px] after:bg-sky-500 after:transition-all after:duration-300 hover:after:w-full"
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
             </ul>
           </nav>
         </div>
