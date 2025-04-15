@@ -12,7 +12,7 @@ export const Section = React.forwardRef<HTMLDivElement,SectionProps>(
                 whileInView={{opacity:1,translateY:0,scale:1}}
                 transition={{duration:0.5}} 
                 exit={{opacity:0.5,translateY:30,scale:0.95}}>
-                    <div className="w-full h-500 bg-gray-200">
+                    <div className="w-full h-500 bg-sky-200">
                         {children}
                     </div>
                 </motion.section>
