@@ -21,7 +21,7 @@ export const SceneryHeader=({...props}:SceneryHeaderProps)=>{
   <div className="flex-[1] pl-5">
     <Eyes></Eyes>
   </div>
-  <div className="flex-[9] flex gap-8 flex-row font-rubik ">
+  <div className="flex-[9] flex gap-8 flex-row font-var(--my) ">
     <p>Introduction</p>
     <p>Member</p>
     <p>Achievement</p>
