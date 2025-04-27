@@ -58,12 +58,14 @@ interface TitleProps extends React.HTMLAttributes<HTMLDivElement>{}
 
 export const Title=({...props}:TitleProps)=>{
   return(
-<div className="ml-40 text-white gap-8">
+<div className="ml-40 text-white flex flex-col gap-4">
     <h1 className={cn(Rubik.className,"text-4xl")}>Intelligent Imaging Computing Lab</h1>
+    <div>
     <span className={cn(Rubik.className,"")}>A laboratory focused on  </span>
     <span className={cn(Rubik.className,"inline-block")}>
         <WordRotate words={["low-level vision","medical image processing"]}/>
     </span>
+    </div>
 </div>
   )
 }
