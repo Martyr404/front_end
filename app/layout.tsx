@@ -1,10 +1,5 @@
 import type { Metadata } from "next";
-import localFont from 'next/font/local'
- 
-const Rubik = localFont({
-  src: '../public/fonts/Rubik-SemiBold.woff2',
-  display: 'swap',
-})
+
 import "./globals.css";
 
 export default function RootLayout({
@@ -14,7 +9,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={Rubik.className}
+      <body
       >
         {children}
       </body>

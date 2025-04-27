@@ -23,7 +23,7 @@
       "@lib/*":["./lib/*"],
       "@app/*": ["./app/*"],
       "@icons/*": ["./app/components/icons/*"],
-      "@public/*":["./app/public/*"]
+      "@public/*":["./public/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
